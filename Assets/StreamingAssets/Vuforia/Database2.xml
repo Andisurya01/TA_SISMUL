@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="pinguin" size="1.000000 1.131034" />
+    <ImageTarget name="harimau" size="1.000000 0.919207" />
+    <ImageTarget name="ayam" size="1.000000 1.001585" />
+    <ImageTarget name="anjing" size="1.000000 1.215800" />
+  </Tracking>
+</QCARConfig>

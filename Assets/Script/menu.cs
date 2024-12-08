@@ -5,12 +5,14 @@ using UnityEngine;
 public class menu : MonoBehaviour
 {
     public GameObject panelMenu;
-    public GameObject panelInfo;
-
+    public GameObject panelSetting;
+    public GameObject planet;
+    
     void Start()
     {
-        panelInfo.SetActive(false);
+        panelSetting.SetActive(false);
         panelMenu.SetActive(true);
+        planet.SetActive(true);
     }
 
     void Update()
@@ -18,13 +20,13 @@ public class menu : MonoBehaviour
         
     }
 
-    public void activeInfo(){
+    public void activeSetting(){
         panelMenu.SetActive(false);
-        panelInfo.SetActive(true);
+        panelSetting.SetActive(true);
     }
 
-    public void desactiveInfo(){
-        panelInfo.SetActive(false);
+    public void desactiveSetting(){
+        panelSetting.SetActive(false);
         panelMenu.SetActive(true);
     }
 
