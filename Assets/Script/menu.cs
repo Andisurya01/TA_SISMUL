@@ -6,13 +6,13 @@ public class menu : MonoBehaviour
 {
     public GameObject panelMenu;
     public GameObject panelSetting;
-    public GameObject planet;
+    public GameObject panelInfo;
     
     void Start()
     {
         panelSetting.SetActive(false);
         panelMenu.SetActive(true);
-        planet.SetActive(true);
+        panelInfo.SetActive(true);
     }
 
     void Update()
@@ -23,11 +23,13 @@ public class menu : MonoBehaviour
     public void activeSetting(){
         panelMenu.SetActive(false);
         panelSetting.SetActive(true);
+        panelInfo.SetActive(false);
     }
 
     public void desactiveSetting(){
         panelSetting.SetActive(false);
         panelMenu.SetActive(true);
+        panelInfo.SetActive(true);
     }
 
     public void exitGame(){

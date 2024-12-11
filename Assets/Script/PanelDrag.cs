@@ -5,26 +5,30 @@ public class PanelDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 {
     public RectTransform panelRect; // Panel yang akan di-drag
     public float smoothSpeed = 10f; // Kecepatan smooth scrolling
-    public float minY = -1080f; // Batas bawah panel
-    public float maxY = 1080f; // Batas atas panel
 
     private Vector2 targetPosition; // Posisi target untuk smooth scrolling
     private bool isDragging = false; // Apakah user sedang melakukan drag
 
-    private void Start()
-{
-    if (panelRect == null)
-    {
-        panelRect = GetComponent<RectTransform>();
-    }
+    private float minY; // Batas bawah panel (dinamis)
+    private float maxY; // Batas atas panel (dinamis)
 
-    // Set posisi awal panel sebagai target posisi
-    targetPosition = panelRect.anchoredPosition;
-}
+    private void Start()
+    {
+        if (panelRect == null)
+        {
+            panelRect = GetComponent<RectTransform>();
+        }
+
+        // Hitung batas awal
+        CalculateBounds();
+
+        // Set posisi awal panel sebagai target posisi
+        targetPosition = panelRect.anchoredPosition;
+        Debug.Log($"minY: {minY}, maxY: {maxY}, screenHeight: {Screen.height}, panelHeight: {panelRect.rect.height}");
+    }
 
     private void Update()
     {
-        // Jika tidak sedang drag, lakukan smooth transition ke target posisi
         if (!isDragging)
         {
             panelRect.anchoredPosition = Vector2.Lerp(panelRect.anchoredPosition, targetPosition, smoothSpeed * Time.deltaTime);
@@ -53,5 +57,15 @@ public class PanelDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         isDragging = false; // Drag selesai
         // Set target posisi ke posisi terakhir saat drag selesai
         targetPosition = panelRect.anchoredPosition;
+    }
+
+    private void CalculateBounds()
+    {
+        float screenHeight = Screen.height; // Tinggi layar dalam piksel
+        float panelHeight = panelRect.rect.height; // Tinggi panel dalam RectTransform
+
+        // Perhitungan batas dinamis
+        minY = -panelHeight + screenHeight * 0.2f; // Biarkan 20% panel terlihat di bawah
+        maxY = screenHeight * 1.5f; // Biarkan panel ditarik maksimum hingga tengah layar
     }
 }
