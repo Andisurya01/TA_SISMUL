@@ -732,8 +732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetUtuh: {fileID: 238020262}
-  planetBerlapis: {fileID: 296317372}
-  planetBerlapisAnimator: {fileID: 296317374}
+  planetBerlapis: {fileID: 0}
+  planetBerlapisAnimator: {fileID: 0}
 --- !u!114 &238020267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,39 +939,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261151871}
   m_CullTransparentMesh: 1
---- !u!1 &296317372 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-    type: 3}
-  m_PrefabInstance: {fileID: 1263606247}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &296317373 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-    type: 3}
-  m_PrefabInstance: {fileID: 1263606247}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &296317374
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296317372}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76e9468a19cb0514cb9a88677049508c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &332332977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,8 +1664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetUtuh: {fileID: 238020262}
-  planetBerlapis: {fileID: 296317372}
-  planetBerlapisAnimator: {fileID: 296317374}
+  planetBerlapis: {fileID: 0}
+  planetBerlapisAnimator: {fileID: 0}
 --- !u!1001 &673521705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2485,166 +2452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161602452}
   m_CullTransparentMesh: 1
---- !u!1001 &1263606247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1529440019}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.201
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.202
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4096120871940991593, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: -4096120871940991593, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4096120871940991593, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_Name
-      value: lapisanPlanet (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395907985004231953, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395907985004231953, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021228346462164004, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5224694813830001383, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.767
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534246568528090362, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534246568528090362, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9179017853419834167, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -5998301319071483956, guid: fdce8c5bb5f845f46b845ce76dae7a09, type: 3}
-    - {fileID: -2932998491564163895, guid: fdce8c5bb5f845f46b845ce76dae7a09, type: 3}
-    - {fileID: -3215555783603854218, guid: fdce8c5bb5f845f46b845ce76dae7a09, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdce8c5bb5f845f46b845ce76dae7a09,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 296317374}
-  m_SourcePrefab: {fileID: 100100000, guid: fdce8c5bb5f845f46b845ce76dae7a09, type: 3}
 --- !u!1 &1298542233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,7 +3118,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238020263}
-  - {fileID: 296317373}
+  - {fileID: 1636603450}
   m_Father: {fileID: 1605341069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1529440021
@@ -3422,64 +3229,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tr:
-  - {fileID: 1379326715}
-  - {fileID: 1081305038}
-  - {fileID: 788624591}
-  - {fileID: 1926232954}
-  - {fileID: 419523285}
-  - {fileID: 2109889518}
-  - {fileID: 1484829290}
-  - {fileID: 178009908}
-  - {fileID: 518998302}
-  - {fileID: 2131451277}
   - {fileID: 1529440021}
   name:
   - Matahari
-  - Planet Merkurios
-  - Planet Venus
-  - Planet Bumi
-  - Planet Mars
-  - Planet Jupiter
-  - Planet Saturnus
-  - Planet Uranus
-  - Planet Neptunus
-  - Planet Pluto
-  - Planet<line-height=65%> Tes
   information:
   - 'Matahari adalah bintang yang menjadi pusat tata surya kita. Dengan komposisi
     sebagian besar berupa hidrogen dan helium, Matahari menghasilkan energi melalui
     reaksi fusi nuklir, yang memberikan cahaya dan panas yang menopang kehidupan
     di Bumi. Diameter Matahari sekitar 1,39 juta kilometer, menjadikannya objek terbesar
     di tata surya.  '
-  - "Sebagai planet terdekat ke Matahari, Merkurius memiliki permukaan berbatu yang
-    dipenuhi kawah seperti Bulan. Suhu di siang hari bisa mencapai 430\xB0C, sementara
-    malam harinya bisa turun hingga -180\xB0C karena atmosfernya yang sangat tipis.  "
-  - "Venus adalah planet yang terpanas di tata surya, dengan suhu permukaan rata-rata
-    sekitar 465\xB0C akibat efek rumah kaca ekstrem dari atmosfernya yang padat dengan
-    karbon dioksida. Venus juga dikenal sebagai \"bintang pagi\" karena kecerahannya
-    di langit Bumi."
-  - 'Satu-satunya planet yang mendukung kehidupan, Bumi memiliki atmosfer kaya oksigen,
-    air dalam wujud cair, dan beragam ekosistem. Dikelilingi oleh satu satelit alami,
-    Bulan, Bumi menjadi rumah bagi miliaran makhluk hidup.  '
-  - 'Disebut "Planet Merah" karena kandungan oksida besi di permukaannya, Mars memiliki
-    gunung tertinggi (Olympus Mons) dan lembah terdalam (Valles Marineris) di tata
-    surya. Mars juga menjadi fokus eksplorasi karena potensinya untuk mendukung kehidupan
-    mikroba.  '
-  - 'Jupiter adalah planet terbesar di tata surya, dengan diameter 11 kali Bumi.
-    Planet ini memiliki lebih dari 75 bulan, termasuk Europa yang mungkin memiliki
-    lautan bawah permukaan. Badai raksasa bernama Great Red Spot telah bertahan selama
-    ratusan tahun.  '
-  - 'Dikenal karena cincin megahnya yang terbuat dari es dan batuan kecil, Saturnus
-    adalah planet gas raksasa kedua terbesar di tata surya. Bulan-bulannya, seperti
-    Titan, memiliki atmosfer yang unik dan potensi untuk mendukung kehidupan.  '
-  - 'Uranus adalah planet gas raksasa yang kaya akan es seperti air, metana, dan
-    amonia. Rotasinya sangat unik karena miring hampir 98 derajat, sehingga planet
-    ini "berguling" di orbitnya. Warna biru kehijauannya berasal dari metana di atmosfernya.  '
-  - 'Sebagai planet terjauh dari Matahari, Neptunus adalah raksasa gas yang sangat
-    dingin dengan angin tercepat di tata surya, mencapai kecepatan hingga 2.100 km/jam.
-    Planet ini memiliki warna biru cerah yang disebabkan oleh metana di atmosfernya.       '
-  - pluto
-  - tes
   audioSources: []
   PlanetName: {fileID: 172158364}
   PlanetInformation: {fileID: 261151873}
@@ -3563,6 +3321,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574992875}
   m_CullTransparentMesh: 1
+--- !u!1001 &1583238746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1529440019}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_Name
+      value: merkurius_anim1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636603453}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636603452}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636603451}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636603454}
+  m_SourcePrefab: {fileID: 100100000, guid: 2202249227791a74295d271ca244bc16, type: 3}
 --- !u!1 &1605341068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,6 +3487,112 @@ Transform:
   - {fileID: 1564231924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1636603449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
+    type: 3}
+  m_PrefabInstance: {fileID: 1583238746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1636603450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2202249227791a74295d271ca244bc16,
+    type: 3}
+  m_PrefabInstance: {fileID: 1583238746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1636603451
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636603449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76e9468a19cb0514cb9a88677049508c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1636603452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636603449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b655939b7ee13b645bd8c1b556c022c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1636603451}
+--- !u!114 &1636603453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636603449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479d695282ba6cf4ba3ab3c4848f05e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deselectWithNothing: 0
+  limit: 0
+  maxSelectables: 5
+  reselect: 3
+  selectables: []
+  onSelected:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeselected:
+    m_PersistentCalls:
+      m_Calls: []
+  onNothing:
+    m_PersistentCalls:
+      m_Calls: []
+  ScreenQuery:
+    Method: 0
+    Layers:
+      serializedVersion: 2
+      m_Bits: 4294967291
+    Search: 1
+    RequiredTag: 
+    Camera: {fileID: 0}
+    Distance: 50
+  deselectWithFingers: 0
+  onSelectedFinger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &1636603454
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636603449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1791578414
 GameObject:
   m_ObjectHideFlags: 0
