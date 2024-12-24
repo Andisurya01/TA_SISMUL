@@ -1,15 +1,16 @@
 using Lean.Touch;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-public class LeanTouchController : MonoBehaviour
+
+public class ChangeObject : MonoBehaviour
 {
     public GameObject objectAR;
     public Animator animator;
-    bool isAnimationActive;
 
     private void Start()
     {
-        isAnimationActive = true;
+        
     }
     private void OnEnable()
     {
@@ -32,23 +33,26 @@ public class LeanTouchController : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
                 Debug.Log("Objek diklik: " + gameObject.name);
-                OnObjectClicked();
+                gameObject.SetActive(false);
+                objectAR.SetActive(true);
+                animator.SetTrigger("move");
             }
         }
     }
 
     private void OnObjectClicked()
     {
-        StartCoroutine(PlanetAnimationCoroutine());
-        IEnumerator PlanetAnimationCoroutine()
+        /*if (statusObject == true)
         {
-            animator.SetTrigger("back");
-            isAnimationActive = false;
-            yield return new WaitForSeconds(0.7f);
-            gameObject.SetActive(false);
-
-            objectAR.SetActive(true);
+            objectAR[0].SetActive(false);
+            objectAR[1].SetActive(true);
+            statusObject = false;
         }
-        
+        else if (statusObject == false)
+        {
+            objectAR[0].SetActive(true);
+            objectAR[1].SetActive(false);
+            statusObject = true;
+        }*/
     }
 }
