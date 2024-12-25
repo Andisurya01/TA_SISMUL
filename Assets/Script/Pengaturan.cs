@@ -5,13 +5,24 @@ using UnityEngine.UI;
 using TMPro;
 public class Pengaturan : MonoBehaviour
 {
+    public static Pengaturan instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public TrackableAr[] tr;
-    public string[] name;
+    public string[] nama;
     public string[] information;
     public AudioSource[] audioSources;
 
     public TextMeshProUGUI  PlanetName;
     public TextMeshProUGUI  PlanetInformation;
+
+    //Value Text Lapisan Planet
+    public TextMeshProUGUI textNamaLapisan;
+    public TextMeshProUGUI textInformasiLapisan;
 
     public GameObject uiPlanetUtuh;
     public GameObject uiLapisanPlanet;
@@ -22,9 +33,20 @@ public class Pengaturan : MonoBehaviour
     private int activeMarkerIndex = -1;
     bool isActive = false;
 
+    public bool isUILapisanActive;
+    public bool isUIPlanetActive;
+
+    //Value dari UI Lapisan Planet
+    public string namaLapisan;
+    public string informasiLapisan;
+
     void Start()
     {
         checkMarker = new bool[tr.Length];
+
+        isUILapisanActive = false;
+        isUIPlanetActive = true;
+
         foreach (var audioSource in audioSources)
         {
             audioSource.Stop();
@@ -37,9 +59,14 @@ public class Pengaturan : MonoBehaviour
         {
             if (tr[i].GetMarker())
             {
-                PlanetName.text = name[i];
+                PlanetName.text = nama[i];
                 PlanetInformation.text = information[i];
                 activeMarkerIndex = i;
+
+                textNamaLapisan.text = namaLapisan;
+                textInformasiLapisan.text = informasiLapisan;
+
+                nameAndDescriptionTracked();
 
                 if (!checkMarker[i])
                 {
@@ -51,6 +78,7 @@ public class Pengaturan : MonoBehaviour
             }
             else
             {
+                nameAndDescriptionTracked();
                 if (checkMarker[i])
                 {
                     counterMarker--;
@@ -59,7 +87,8 @@ public class Pengaturan : MonoBehaviour
                 }
             }
         }
-        nameAndDescriptionTracked();
+        /*nameAndDescriptionTracked();*/
+        
     }
 
     void nameAndDescriptionTracked()
@@ -73,9 +102,14 @@ public class Pengaturan : MonoBehaviour
         }
         else
         {   
-            uiPlanetUtuh.SetActive(true);
-            uiLapisanPlanet.SetActive(false);
+            uiPlanetUtuh.SetActive(isUIPlanetActive);
+            uiLapisanPlanet.SetActive(isUILapisanActive);
             nonTracking.SetActive(false);
         }
+    }
+
+    void StatusUIActive()
+    {
+        
     }
 }

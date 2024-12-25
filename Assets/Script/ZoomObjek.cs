@@ -44,6 +44,14 @@ public class ZoomObjek : MonoBehaviour
                     // Tetapkan objek yang diklik sebagai target
                     targetObject = hit.collider.gameObject;
 
+                    Pengaturan.instance.isUILapisanActive = true;
+                    Pengaturan.instance.isUIPlanetActive = false;
+                    Debug.Log("Objek diklik: " + targetObject.name);
+
+                    Pengaturan.instance.namaLapisan = targetObject.GetComponent<LapisanPlanet>().namaLapisan;
+                    Pengaturan.instance.informasiLapisan = targetObject.GetComponent<LapisanPlanet>().informasiLapisan;
+
+
                     // Sembunyikan semua objek bertag "Zoomable" kecuali target
                     foreach (GameObject obj in zoomableObjects)
                     {

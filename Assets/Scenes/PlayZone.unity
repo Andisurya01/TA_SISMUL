@@ -1632,6 +1632,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0071884184, y: 0.007962886, z: 0.013344965}
   m_Center: {x: -0.0029448345, y: -0.0033320712, z: 0.000045590998}
+--- !u!114 &781595910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781595904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf85a62bdc9631742a162255402ba626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaLapisan: Inti Merkurius
+  informasiLapisan: Yah intinya dia adalah inti dari inti
 --- !u!1 &788624587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1835,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4137455876009383503, guid: 2202249227791a74295d271ca244bc16, type: 3}
+--- !u!114 &888435449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888435443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf85a62bdc9631742a162255402ba626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaLapisan: Kerak Merkurius
+  informasiLapisan: Ya kerak merkurius
 --- !u!1 &889560263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,6 +1914,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6552503254863439366, guid: 2202249227791a74295d271ca244bc16, type: 3}
+--- !u!114 &917392134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917392128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf85a62bdc9631742a162255402ba626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaLapisan: Mantel Dalam Merkurius
+  informasiLapisan: Yah seperti namanya dia mantel dalam
 --- !u!1 &962627933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +2517,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 196288640622949635, guid: 2202249227791a74295d271ca244bc16, type: 3}
+--- !u!114 &1242440446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242440440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf85a62bdc9631742a162255402ba626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaLapisan: Mantel Luar Merkurius
+  informasiLapisan: Mantel Luar Merkurius
 --- !u!1 &1298542233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,6 +3274,7 @@ GameObject:
   - component: {fileID: 1564231924}
   - component: {fileID: 1564231925}
   - component: {fileID: 1564231926}
+  - component: {fileID: 1564231927}
   m_Layer: 0
   m_Name: Pengaturan
   m_TagString: Untagged
@@ -3254,7 +3311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tr:
   - {fileID: 1529440021}
-  name:
+  nama:
   - Matahari
   information:
   - 'Matahari adalah bintang yang menjadi pusat tata surya kita. Dengan komposisi
@@ -3262,13 +3319,21 @@ MonoBehaviour:
     reaksi fusi nuklir, yang memberikan cahaya dan panas yang menopang kehidupan
     di Bumi. Diameter Matahari sekitar 1,39 juta kilometer, menjadikannya objek terbesar
     di tata surya.  '
+  - Fotosfer adnwaidnaiwndianf
   audioSources:
+  - {fileID: 0}
   - {fileID: 0}
   PlanetName: {fileID: 172158364}
   PlanetInformation: {fileID: 261151873}
+  textNamaLapisan: {fileID: 438414067}
+  textInformasiLapisan: {fileID: 1381890830}
   uiPlanetUtuh: {fileID: 2040672560}
   uiLapisanPlanet: {fileID: 1150953268}
   nonTracking: {fileID: 436939653}
+  isUILapisanActive: 0
+  isUIPlanetActive: 0
+  namaLapisan: 
+  informasiLapisan: 
 --- !u!114 &1564231926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3284,6 +3349,25 @@ MonoBehaviour:
   mainCamera: {fileID: 29849161}
   zoomSpeed: 2
   zoomOffset: {x: 0, y: 0, z: -5}
+--- !u!114 &1564231927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564231923}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ee73246d6bd104580bccae891b3ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tr:
+  - {fileID: 1529440021}
+  UIPlanetUtuh: {fileID: 2040672560}
+  UILapisanPlanet: {fileID: 1150953268}
+  nonTracking: {fileID: 436939653}
+  isUIPlanetActive: 0
+  isUILapisanActive: 0
 --- !u!1 &1574992875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,7 +3581,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2202249227791a74295d271ca244bc16,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4424396828587804706, guid: 2202249227791a74295d271ca244bc16,
         type: 3}
@@ -3553,18 +3637,34 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 888435445}
+    - targetCorrespondingSourceObject: {fileID: -5998301319071483956, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 888435449}
     - targetCorrespondingSourceObject: {fileID: -5413527474356003177, guid: 2202249227791a74295d271ca244bc16,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1242440442}
+    - targetCorrespondingSourceObject: {fileID: -5413527474356003177, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1242440446}
     - targetCorrespondingSourceObject: {fileID: 8679558718761855538, guid: 2202249227791a74295d271ca244bc16,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 917392130}
+    - targetCorrespondingSourceObject: {fileID: 8679558718761855538, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917392134}
     - targetCorrespondingSourceObject: {fileID: -5334000131640321852, guid: 2202249227791a74295d271ca244bc16,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 781595906}
+    - targetCorrespondingSourceObject: {fileID: -5334000131640321852, guid: 2202249227791a74295d271ca244bc16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 781595910}
   m_SourcePrefab: {fileID: 100100000, guid: 2202249227791a74295d271ca244bc16, type: 3}
 --- !u!1 &1605341068
 GameObject:
