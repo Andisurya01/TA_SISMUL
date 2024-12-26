@@ -45,9 +45,13 @@ public class LeanTouchController : MonoBehaviour
             animator.SetTrigger("back");
             isAnimationActive = false;
             yield return new WaitForSeconds(0.7f);
-            gameObject.SetActive(false);
 
-            objectAR.SetActive(true);
+            Pengaturan.instance.planetUtuh = true;
+            Pengaturan.instance.planetLapisan = false;
+
+            gameObject.SetActive(Pengaturan.instance.planetLapisan);
+
+            objectAR.SetActive(Pengaturan.instance.planetUtuh);
         }
         
     }

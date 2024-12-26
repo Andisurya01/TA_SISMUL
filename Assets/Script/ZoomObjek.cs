@@ -108,5 +108,7 @@ public class ZoomObjek : MonoBehaviour
         // Hentikan zoom
         isZooming = false;
         targetObject = null;
+        Pengaturan.instance.isUILapisanActive = false;
+        Pengaturan.instance.isUIPlanetActive = true;
     }
 }

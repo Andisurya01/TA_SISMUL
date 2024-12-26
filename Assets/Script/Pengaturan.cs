@@ -24,6 +24,7 @@ public class Pengaturan : MonoBehaviour
     public TextMeshProUGUI textNamaLapisan;
     public TextMeshProUGUI textInformasiLapisan;
 
+    //Variabel yang menampung UI
     public GameObject uiPlanetUtuh;
     public GameObject uiLapisanPlanet;
     public GameObject nonTracking;
@@ -33,6 +34,7 @@ public class Pengaturan : MonoBehaviour
     private int activeMarkerIndex = -1;
     bool isActive = false;
 
+    //Variabel untuk mendeteksi UI yang aktif
     public bool isUILapisanActive;
     public bool isUIPlanetActive;
 
@@ -40,12 +42,23 @@ public class Pengaturan : MonoBehaviour
     public string namaLapisan;
     public string informasiLapisan;
 
+    //Untuk mencari semua objek yang bisa di hilangkan dan di zoom
+    public GameObject[] zoomableObjects; // Objek yang bisa di-zoom
+    public GameObject[] hideableObjects; // Objek yang harus ikut menghilang
+
+    //Untuk deteksi planet utuh/lapisan planet
+    public bool planetUtuh;
+    public bool planetLapisan;
+
     void Start()
     {
         checkMarker = new bool[tr.Length];
 
         isUILapisanActive = false;
         isUIPlanetActive = true;
+
+        planetUtuh = true;
+        planetLapisan = false;
 
         foreach (var audioSource in audioSources)
         {
@@ -87,7 +100,6 @@ public class Pengaturan : MonoBehaviour
                 }
             }
         }
-        /*nameAndDescriptionTracked();*/
         
     }
 
@@ -99,6 +111,8 @@ public class Pengaturan : MonoBehaviour
             uiLapisanPlanet.SetActive(false);
             nonTracking.SetActive(true);
             activeMarkerIndex = -1;
+
+            
         }
         else
         {   
@@ -106,10 +120,5 @@ public class Pengaturan : MonoBehaviour
             uiLapisanPlanet.SetActive(isUILapisanActive);
             nonTracking.SetActive(false);
         }
-    }
-
-    void StatusUIActive()
-    {
-        
     }
 }

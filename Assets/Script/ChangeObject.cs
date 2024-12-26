@@ -8,10 +8,6 @@ public class ChangeObject : MonoBehaviour
     public GameObject objectAR;
     public Animator animator;
 
-    private void Start()
-    {
-        
-    }
     private void OnEnable()
     {
         // Menambahkan event untuk mendeteksi klik pada objek
@@ -33,26 +29,20 @@ public class ChangeObject : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
                 Debug.Log("Objek diklik: " + gameObject.name);
-                gameObject.SetActive(false);
-                objectAR.SetActive(true);
+
+                Pengaturan.instance.planetUtuh = false;
+                Pengaturan.instance.planetLapisan = true;
+
+                gameObject.SetActive(Pengaturan.instance.planetUtuh);
+                objectAR.SetActive(Pengaturan.instance.planetLapisan);
                 animator.SetTrigger("move");
+
+                // Cari semua objek bertag "Zoomable"
+                Pengaturan.instance.zoomableObjects = GameObject.FindGameObjectsWithTag("Zoomable");
+
+                // Cari semua objek bertag "HideWithZoom"
+                Pengaturan.instance.hideableObjects = GameObject.FindGameObjectsWithTag("HideWithZoom");
             }
         }
-    }
-
-    private void OnObjectClicked()
-    {
-        /*if (statusObject == true)
-        {
-            objectAR[0].SetActive(false);
-            objectAR[1].SetActive(true);
-            statusObject = false;
-        }
-        else if (statusObject == false)
-        {
-            objectAR[0].SetActive(true);
-            objectAR[1].SetActive(false);
-            statusObject = true;
-        }*/
     }
 }
