@@ -44,7 +44,7 @@ public class LeanTouchController : MonoBehaviour
         {
             animator.SetTrigger("back");
             isAnimationActive = false;
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(1.7f);
 
             Pengaturan.instance.planetUtuh = true;
             Pengaturan.instance.planetLapisan = false;
