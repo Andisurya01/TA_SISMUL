@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Zoomable
   - HideWithZoom
+  - PlanetLapisan
+  - PlanetUtuh
+  - TataSurya
   layers:
   - Default
   - TransparentFX

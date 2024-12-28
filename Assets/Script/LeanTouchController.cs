@@ -3,13 +3,14 @@ using System.Collections;
 using UnityEngine;
 public class LeanTouchController : MonoBehaviour
 {
-    public GameObject objectAR;
+    //public GameObject objectAR;
     public Animator animator;
-    bool isAnimationActive;
+    bool isclicked;
+    //bool isAnimationActive;
 
     private void Start()
     {
-        isAnimationActive = true;
+        Pengaturan.instance.isAnimationActive = true;
     }
     private void OnEnable()
     {
@@ -39,19 +40,24 @@ public class LeanTouchController : MonoBehaviour
 
     private void OnObjectClicked()
     {
+        if (isclicked) { return; }
+        isclicked = true;
         StartCoroutine(PlanetAnimationCoroutine());
         IEnumerator PlanetAnimationCoroutine()
         {
             animator.SetTrigger("back");
-            isAnimationActive = false;
+
+            Pengaturan.instance.isAnimationActive = false;
             yield return new WaitForSeconds(1.7f);
+
+            isclicked = false;
 
             Pengaturan.instance.planetUtuh = true;
             Pengaturan.instance.planetLapisan = false;
 
             gameObject.SetActive(Pengaturan.instance.planetLapisan);
 
-            objectAR.SetActive(Pengaturan.instance.planetUtuh);
+            Pengaturan.instance.planetUtuhObjek.SetActive(Pengaturan.instance.planetUtuh);
         }
         
     }
